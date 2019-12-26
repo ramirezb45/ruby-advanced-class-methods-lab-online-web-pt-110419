@@ -20,3 +20,10 @@ song = Song.new_by_name("The Middle")
 song.name
 
 song = Song.create_by_name("The Middle")
+
+Song.find_by_name("The Middle")
+
+song_1 = Song.find_or_create_by_name("Blank Space")
+song_2 = Song.find_or_create_by_name("Blank Space")
+
+song_1 == song_2
